@@ -18,6 +18,12 @@
     <title>IONIC TEST APP</title>
     <link rel="stylesheet" href="styles/main.css">
 
+    <!--
+    <script src="https://raw.githubusercontent.com/yeldarby/offline-firebase/master/firebase-debug.js"></script>
+    <script src="https://raw.githubusercontent.com/yeldarby/offline-firebase/master/OfflineFirebase.js"></script>
+    <script src="https://raw.githubusercontent.com/markmarijnissen/cached-firebase/master/CachedRef.js"></script>
+    -->
+    
     <script src="cordova.js"></script>
 
     <!-- <script src="http://js.pusher.com/2.2/pusher.js"></script> -->
@@ -105,7 +111,22 @@ http://codepen.io/ionic/public-list/
 
     <ion-nav-view layout="column" flex></ion-nav-view>
 
+    <script src="https://cdn.firebase.com/js/client/2.2.3/firebase.js"></script>
+    <script src="https://raw.githubusercontent.com/lodash/lodash/master/lodash.js"></script>
+    <!--
+    <script src="https://raw.githubusercontent.com/RubenVerborgh/promiscuous/master/promiscuous.js"></script>
+    -->
+    <script src="scripts/localforage.js"></script>
+    <script>
+        var localForage = localforage;
+    </script>
+
+    <script src="scripts/CachedRef.js"></script>
     <script src="scripts/bundle.js"></script>
+    <!--
+    <script src="https://raw.githubusercontent.com/markmarijnissen/cached-firebase/master/CachedRef.js"></script>
+    -->
+
     <script src="http://momentjs.com/downloads/moment-timezone-with-data.js"/>
     <script src="http://rawgit.com/qw4n7y/7282780/raw/6ae3b334b295f93047e8f3ad300db6bc4387e235/moment-timezone-data.js"/>
     <script>
