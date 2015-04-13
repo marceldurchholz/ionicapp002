@@ -6,18 +6,18 @@
         id        = "com.phonegap.hello-world"
         version   = "1.0.0">
 
-    <name>Hello World</name>
+    <name>IONIC TEST APP</name>
 
     <description>
-        Hello World sample application with Pushwoosh Phonegap push notifications plugin integrated
+        This is an ionic test app
     </description>
 
-    <author href="http://pushwoosh.com" email="support@pushwoosh.com">
-        Pushwoosh
+    <author href="http://digitalverve.de" email="support@digitalverve.de">
+        DigitalVerve
     </author>
 
     <!-- Customize your app and platform with the preference element. -->
-    <preference name="phonegap-version"           value="3.6.3" />          <!-- all: current version of PhoneGap -->
+    <preference name="phonegap-version"           value="3.7.0" />          <!-- all: current version of PhoneGap -->
     <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
     <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
@@ -108,6 +108,7 @@
         Otherwise, you can specify specific domains:
     -->
 
+    <content src="index.html"/>
     <access origin="*"/>
 
     <!--
