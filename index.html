@@ -74,6 +74,20 @@
         -->
 
 
+        <script>
+            function moveCursorToEnd(el) {
+                if (typeof el.selectionStart == "number") {
+                    el.selectionStart = el.selectionEnd = el.value.length;
+                } else if (typeof el.createTextRange != "undefined") {
+                    el.focus();
+                    var range = el.createTextRange();
+                    range.collapse(false);
+                    range.select();
+                }
+            }
+        </script>
+
+
     </head>
 
     <body class="platform-cordova" layout="column" flex>
@@ -308,7 +322,6 @@
             input[type="tel"]:focus,
             input[type="color"]:focus,
             .uneditable-input:focus {
-                b/ackground-color:red !important;
                 border-color: rgba(82, 168, 236, 0.8) !important;
                 outline: 0 !important;
                 outline: thin dotted \9 !important;
