@@ -1,1 +1,30 @@
-333
+<div>
+
+	<div class="padding">
+
+		downline.html content
+
+		<hr/>
+
+		b) <include-template template-url="users/list"/>
+
+		<hr/>
+
+		a) {{ usersCommonController.myUsersObjectSynced }}
+
+		<hr/>
+
+		<div class="list">
+			<div ng-repeat="(key, item) in usersCommonController.myUsersObjectSynced track by $index" class="item item-complex item-avatar item-icon-right" xxx_item-type="item-icon-left item-icon-right" can-swipe="false" can-reorder="false" can-delete="false">
+			    <a class="item item-avatar" preventDefault href="#" ui-sref="users.details({user_id:key})" >
+			      	<img src="pngs/app/corporate/avatar_m.png">
+			      	<h2>{{ usersCommonController.usersObjectSynced[key].firstname }} {{ usersCommonController.usersObjectSynced[key].lastname }}</h2>
+			      	<p>{{ usersCommonController.usersObjectSynced[key].style }}</p>
+					<i class="icon item-icon-right ion-chevron-right" style="padding-right:0;f/ont-size:inherit;"></i>
+			    </a>
+		    </div>
+		</div>
+
+	</div>
+
+</div>
