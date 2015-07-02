@@ -2,7 +2,7 @@
 
 	<div class="list" ng-class="{'no-norder': templateBorder || templateBorder == true}">
 		<div ng-repeat="(key, item) in templateController.myUsersObjectSynced track by $index" class="item item-complex item-avatar item-icon-right" can-swipe="false" can-reorder="false" can-delete="false">
-		    <a class="item item-avatar" xxx_preventDefault xxx_href="#" ng-click="$root.shoutLoud($event,'user_id:'+key)" xxx_ui-sref="users.details({user_id:key})" >
+		    <a class="item item-avatar" xxx_preventDefault xxx_href="#" xxx_ng-click="$root.shoutLoud($event,'user_id:'+key)" ui-sref="users.details({user_id:key})" >
 		      	<img src="pngs/app/corporate/avatar_m.png">
 		      	<h2>{{ templateController.usersObjectSynced[key].firstname }} {{ templateController.usersObjectSynced[key].lastname }}</h2>
 		      	<p>{{ templateController.usersObjectSynced[key].style }}</p>
