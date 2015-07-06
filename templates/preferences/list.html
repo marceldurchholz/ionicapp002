@@ -1,0 +1,59 @@
+<div>
+
+<!--
+	aaa {{ templateController.myPreferencesObjectSynced }} aaa
+	<hr/>
+	bbb {{ templateController.preferencesObjectSynced }} bbb
+-->
+
+	<div class="list" ng-class="{'no-norder': templateBorder || templateBorder == true}">
+
+	  <!--
+	  <a class="item item-icon-left" href="#">
+	    <i class="icon ion-email"></i>
+	    Check mail
+	  </a>
+
+	  <a class="item item-icon-left item-icon-right" href="#">
+	    <i class="icon ion-chatbubble-working"></i>
+	    Call Ma
+	    <i class="icon ion-ios-telephone-outline"></i>
+	  </a>
+
+	  <a class="item item-icon-left" href="#">
+	    <i class="icon ion-mic-a"></i>
+	    Record album
+	    <span class="item-note">
+	      Grammy
+	    </span>
+	  </a>
+
+	  <a class="item item-icon-left" href="#">
+	    <i class="icon ion-person-stalker"></i>
+	    Friends
+	    <span class="badge badge-assertive">0</span>
+	  </a>
+	  -->
+
+	  <a ng-repeat="(key, item) in templateController.myPreferencesObjectSynced track by $index" class="item item-icon-left item-icon-right" ng-href="{{ templateController.preferencesObjectSynced[key].href }}">
+	    <i class="icon {{ templateController.preferencesObjectSynced[key].listicon }}"></i>
+	    {{ templateController.preferencesObjectSynced[key].name }} / {{ templateController.preferencesObjectSynced[key].tab }}
+	    <i class="icon ion-chevron-right"></i>
+	  </a>
+
+	</div>
+
+	<!--
+	<div class="list" ng-class="{'no-norder': templateBorder || templateBorder == true}">
+		<div ng-repeat="(key, item) in templateController.myPreferencesObjectSyncedAccess track by $index" class="item item-complex item-avatar item-icon-right" can-swipe="false" can-reorder="false" can-delete="false">
+		    <a class="item item-avatar" ui-sref="users.details({user_id:'simplelogin:2'})" >
+		      	<i class="icon {{ templateController.visiblePreferencesObjectSynced[item].listicon }} placeholder-icon"></i>
+		      	<h2>{{ templateController.visiblePreferencesObjectSynced[item].name }}</h2>
+		      	<p>{{ templateController.visiblePreferencesObjectSynced[item].description }}</p>
+				<i class="icon item-icon-right ion-chevron-right" style="padding-right:0;"></i>
+		    </a>
+	    </div>
+	</div>
+	-->
+
+</div>

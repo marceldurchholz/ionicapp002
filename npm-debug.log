@@ -1,0 +1,235 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files (x86)\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'update',
+1 verbose cli   '-g',
+1 verbose cli   'generator-mcfly',
+1 verbose cli   'generator-sublime' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.0
+4 verbose node symlink C:\Program Files (x86)\nodejs\\node.exe
+5 silly mapToRegistry name generator-sublime
+6 silly mapToRegistry using default registry
+7 silly mapToRegistry registry https://registry.npmjs.org/
+8 silly mapToRegistry uri https://registry.npmjs.org/generator-sublime
+9 verbose request uri https://registry.npmjs.org/generator-sublime
+10 verbose request no auth needed
+11 info attempt registry request try #1 at 12:34:59
+12 verbose request id d2d3a627739a69eb
+13 http request GET https://registry.npmjs.org/generator-sublime
+14 http 200 https://registry.npmjs.org/generator-sublime
+15 silly get cb [ 200,
+15 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+15 silly get     etag: '"9HH888U9J8Z49Y8508EB6PKMQ"',
+15 silly get     'content-type': 'application/json',
+15 silly get     'cache-control': 'max-age=60',
+15 silly get     'content-length': '344495',
+15 silly get     'accept-ranges': 'bytes',
+15 silly get     date: 'Mon, 06 Jul 2015 10:35:26 GMT',
+15 silly get     via: '1.1 varnish',
+15 silly get     age: '0',
+15 silly get     connection: 'keep-alive',
+15 silly get     'x-served-by': 'cache-ams4150-AMS',
+15 silly get     'x-cache': 'MISS',
+15 silly get     'x-cache-hits': '0',
+15 silly get     'x-timer': 'S1436178926.060213,VS0,VE598',
+15 silly get     vary: 'Accept' } ]
+16 verbose get saving generator-sublime to C:\Users\marcel.durchholz\AppData\Roaming\npm-cache\registry.npmjs.org\generator-sublime\.cache.json
+17 info outdated updating [ [ 'C:\\Users\\marcel.durchholz\\AppData\\Roaming\\npm',
+17 info outdated     'generator-sublime',
+17 info outdated     '1.5.9',
+17 info outdated     '1.8.9',
+17 info outdated     '1.8.9',
+17 info outdated     'latest' ] ]
+18 verbose install where, what [ 'C:\\Users\\marcel.durchholz\\AppData\\Roaming\\npm',
+18 verbose install   [ 'generator-sublime@1.8.9' ] ]
+19 silly cache add args [ 'generator-sublime@1.8.9', null ]
+20 verbose cache add spec generator-sublime@1.8.9
+21 silly cache add parsed spec { raw: 'generator-sublime@1.8.9',
+21 silly cache add   scope: null,
+21 silly cache add   name: 'generator-sublime',
+21 silly cache add   rawSpec: '1.8.9',
+21 silly cache add   spec: '1.8.9',
+21 silly cache add   type: 'version' }
+22 verbose addNamed generator-sublime@1.8.9
+23 silly addNamed semver.valid 1.8.9
+24 silly addNamed semver.validRange 1.8.9
+25 silly mapToRegistry name generator-sublime
+26 silly mapToRegistry using default registry
+27 silly mapToRegistry registry https://registry.npmjs.org/
+28 silly mapToRegistry uri https://registry.npmjs.org/generator-sublime
+29 verbose addNameVersion registry:https://registry.npmjs.org/generator-sublime not in flight; fetching
+30 verbose request uri https://registry.npmjs.org/generator-sublime
+31 verbose request no auth needed
+32 info attempt registry request try #1 at 12:36:43
+33 verbose etag "9HH888U9J8Z49Y8508EB6PKMQ"
+34 http request GET https://registry.npmjs.org/generator-sublime
+35 http 304 https://registry.npmjs.org/generator-sublime
+36 silly get cb [ 304,
+36 silly get   { date: 'Mon, 06 Jul 2015 10:37:10 GMT',
+36 silly get     via: '1.1 varnish',
+36 silly get     'cache-control': 'max-age=60',
+36 silly get     etag: '"9HH888U9J8Z49Y8508EB6PKMQ"',
+36 silly get     age: '1',
+36 silly get     connection: 'keep-alive',
+36 silly get     'x-served-by': 'cache-lcy1135-LCY',
+36 silly get     'x-cache': 'MISS',
+36 silly get     'x-cache-hits': '0',
+36 silly get     'x-timer': 'S1436179030.245877,VS0,VE1018',
+36 silly get     vary: 'Accept' } ]
+37 verbose etag https://registry.npmjs.org/generator-sublime from cache
+38 verbose get saving generator-sublime to C:\Users\marcel.durchholz\AppData\Roaming\npm-cache\registry.npmjs.org\generator-sublime\.cache.json
+39 silly mapToRegistry name generator-sublime
+40 silly mapToRegistry using default registry
+41 silly mapToRegistry registry https://registry.npmjs.org/
+42 silly mapToRegistry uri https://registry.npmjs.org/generator-sublime
+43 verbose addRemoteTarball https://registry.npmjs.org/generator-sublime/-/generator-sublime-1.8.9.tgz not in flight; adding
+44 verbose addRemoteTarball [ 'https://registry.npmjs.org/generator-sublime/-/generator-sublime-1.8.9.tgz',
+44 verbose addRemoteTarball   '2a323643919ce2985a732ee8d0d013fbf5362ca1' ]
+45 info retry fetch attempt 1 at 12:36:44
+46 info attempt registry request try #1 at 12:36:44
+47 http fetch GET https://registry.npmjs.org/generator-sublime/-/generator-sublime-1.8.9.tgz
+48 http fetch 200 https://registry.npmjs.org/generator-sublime/-/generator-sublime-1.8.9.tgz
+49 silly fetchAndShaCheck shasum 2a323643919ce2985a732ee8d0d013fbf5362ca1
+50 verbose addTmpTarball C:\Users\MARCEL~1.DUR\AppData\Local\Temp\npm-6076-40c0f690\registry.npmjs.org\generator-sublime\-\generator-sublime-1.8.9.tgz not in flight; adding
+51 verbose addTmpTarball already have metadata; skipping unpack for generator-sublime@1.8.9
+52 silly cache afterAdd generator-sublime@1.8.9
+53 verbose afterAdd C:\Users\marcel.durchholz\AppData\Roaming\npm-cache\generator-sublime\1.8.9\package\package.json not in flight; writing
+54 verbose afterAdd C:\Users\marcel.durchholz\AppData\Roaming\npm-cache\generator-sublime\1.8.9\package\package.json written
+55 silly install resolved [ { name: 'generator-sublime',
+55 silly install resolved     version: '1.8.9',
+55 silly install resolved     description: 'Yeoman generator for scaffolfding the standard configuration root files like .gitignore, .jshintrc, .jscsrc etc...',
+55 silly install resolved     license: 'BSD',
+55 silly install resolved     main: 'app/index.js',
+55 silly install resolved     repository:
+55 silly install resolved      { type: 'git',
+55 silly install resolved        url: 'git+https://github.com/mcfly-io/generator-sublime.git' },
+55 silly install resolved     author:
+55 silly install resolved      { name: 'Avi Haiat',
+55 silly install resolved        email: 'thaiat@ipelia.com',
+55 silly install resolved        url: 'https://github.com/thaiat' },
+55 silly install resolved     engines: { node: '>=0.10.0' },
+55 silly install resolved     scripts:
+55 silly install resolved      { coverage: 'istanbul cover ./node_modules/mocha/bin/_mocha ./test -r ./test/helpers/global.js && istanbul report cobertura',
+55 silly install resolved        test: 'gulp test' },
+55 silly install resolved     files:
+55 silly install resolved      [ 'bin/prepublish.sh',
+55 silly install resolved        'class',
+55 silly install resolved        'app',
+55 silly install resolved        'bash',
+55 silly install resolved        'gulps',
+55 silly install resolved        'templates' ],
+55 silly install resolved     preferGlobal: true,
+55 silly install resolved     keywords:
+55 silly install resolved      [ 'yeoman-generator',
+55 silly install resolved        'editor',
+55 silly install resolved        'app',
+55 silly install resolved        'sublime',
+55 silly install resolved        'lint',
+55 silly install resolved        'jshint',
+55 silly install resolved        'jsbeautify',
+55 silly install resolved        'tern',
+55 silly install resolved        'scaffold' ],
+55 silly install resolved     dependencies:
+55 silly install resolved      { chalk: '1.0.0',
+55 silly install resolved        github: '0.2.4',
+55 silly install resolved        lodash: '2.4.1',
+55 silly install resolved        q: '1.4.1',
+55 silly install resolved        shelljs: '0.5.1',
+55 silly install resolved        'strip-json-comments': '1.0.2',
+55 silly install resolved        'update-notifier': '0.5.0',
+55 silly install resolved        'yeoman-generator': '0.17.7',
+55 silly install resolved        yosay: '1.0.4' },
+55 silly install resolved     devDependencies:
+55 silly install resolved      { chai: '3.0.0',
+55 silly install resolved        'conventional-changelog': '0.0.17',
+55 silly install resolved        del: '1.2.0',
+55 silly install resolved        'github-username': '2.0.0',
+55 silly install resolved        growly: '1.2.0',
+55 silly install resolved        gulp: '3.9.0',
+55 silly install resolved        'gulp-bump': '0.3.1',
+55 silly install resolved        'gulp-concat': '2.5.2',
+55 silly install resolved        'gulp-eslint': '0.13.2',
+55 silly install resolved        'gulp-exec': '2.1.1',
+55 silly install resolved        'gulp-git': '1.2.4',
+55 silly install resolved        'gulp-help': '1.6.0',
+55 silly install resolved        'gulp-if': '1.2.5',
+55 silly install resolved        'gulp-istanbul': '0.10.0',
+55 silly install resolved        'gulp-jscs': '1.6.0',
+55 silly install resolved        'gulp-jshint': '1.11.0',
+55 silly install resolved        'gulp-load-plugins': '0.10.0',
+55 silly install resolved        'gulp-mocha': '2.1.1',
+55 silly install resolved        'gulp-plumber': '1.0.1',
+55 silly install resolved        'gulp-tap': '0.1.3',
+55 silly install resolved        'gulp-util': '3.0.5',
+55 silly install resolved        inquirer: '0.8.5',
+55 silly install resolved        'jshint-stylish': '2.0.0',
+55 silly install resolved        'karma-growl-reporter': '0.1.1',
+55 silly install resolved        'map-stream': '0.0.5',
+55 silly install resolved        mocha: '2.2.5',
+55 silly install resolved        'mocha-lcov-reporter': '0.0.2',
+55 silly install resolved        mockery: '1.4.0',
+55 silly install resolved        'node-jsxml': '0.6.0',
+55 silly install resolved        'require-dir': '0.3.0',
+55 silly install resolved        'run-sequence': '1.1.0',
+55 silly install resolved        sinon: '1.15.0',
+55 silly install resolved        'stream-combiner': '0.2.2',
+55 silly install resolved        streamqueue: '1.1.0',
+55 silly install resolved        yargs: '3.10.0' },
+55 silly install resolved     peerDependencies: { yo: '>=1.0.0' },
+55 silly install resolved     gitHead: 'cbf8c9db804a3225ba9f797dee50870d88004647',
+55 silly install resolved     bugs: { url: 'https://github.com/mcfly-io/generator-sublime/issues' },
+55 silly install resolved     homepage: 'https://github.com/mcfly-io/generator-sublime#readme',
+55 silly install resolved     _id: 'generator-sublime@1.8.9',
+55 silly install resolved     _shasum: '2a323643919ce2985a732ee8d0d013fbf5362ca1',
+55 silly install resolved     _from: 'generator-sublime@1.8.9',
+55 silly install resolved     _npmVersion: '2.11.2',
+55 silly install resolved     _nodeVersion: '0.12.5',
+55 silly install resolved     _npmUser: { name: 'thaiat', email: 'thaiat@ipelia.com' },
+55 silly install resolved     maintainers: [ [Object] ],
+55 silly install resolved     dist:
+55 silly install resolved      { shasum: '2a323643919ce2985a732ee8d0d013fbf5362ca1',
+55 silly install resolved        tarball: 'http://registry.npmjs.org/generator-sublime/-/generator-sublime-1.8.9.tgz' },
+55 silly install resolved     directories: {},
+55 silly install resolved     _resolved: 'https://registry.npmjs.org/generator-sublime/-/generator-sublime-1.8.9.tgz' } ]
+56 info install generator-sublime@1.8.9 into C:\Users\marcel.durchholz\AppData\Roaming\npm
+57 info installOne generator-sublime@1.8.9
+58 verbose installOne of generator-sublime to C:\Users\marcel.durchholz\AppData\Roaming\npm not in flight; installing
+59 verbose lock using C:\Users\marcel.durchholz\AppData\Roaming\npm-cache\_locks\generator-sublime-346388595137899d.lock for C:\Users\marcel.durchholz\AppData\Roaming\npm\node_modules\generator-sublime
+60 silly install write writing generator-sublime 1.8.9 to C:\Users\marcel.durchholz\AppData\Roaming\npm\node_modules\generator-sublime
+61 silly cache addNamed cb generator-sublime@1.8.9
+62 verbose unbuild node_modules\generator-sublime
+63 info preuninstall generator-sublime@1.5.9
+64 info uninstall generator-sublime@1.5.9
+65 verbose unbuild rmStuff generator-sublime@1.5.9 from C:\Users\marcel.durchholz\AppData\Roaming\npm\node_modules
+66 info postuninstall generator-sublime@1.5.9
+67 verbose gentlyRm vacuuming C:\Users\marcel.durchholz\AppData\Roaming\npm\node_modules\generator-sublime
+68 silly gentlyRm purging C:\Users\marcel.durchholz\AppData\Roaming\npm\node_modules\generator-sublime
+69 verbose unlock done using C:\Users\marcel.durchholz\AppData\Roaming\npm-cache\_locks\generator-sublime-346388595137899d.lock for C:\Users\marcel.durchholz\AppData\Roaming\npm\node_modules\generator-sublime
+70 verbose stack Error: EPERM, unlink 'C:\Users\marcel.durchholz\AppData\Roaming\npm\node_modules\generator-sublime\node_modules\yeoman-generator\node_modules\grouped-queue\node_modules\setimmediate\package.json'
+70 verbose stack     at Error (native)
+71 verbose cwd c:\conemu\apps\angular-famous-ionic_001\dist\app\prod\www
+72 error Windows_NT 6.1.7601
+73 error argv "C:\\Program Files (x86)\\nodejs\\\\node.exe" "C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "update" "-g" "generator-mcfly" "generator-sublime"
+74 error node v0.12.0
+75 error npm  v2.5.1
+76 error path C:\Users\marcel.durchholz\AppData\Roaming\npm\node_modules\generator-sublime\node_modules\yeoman-generator\node_modules\grouped-queue\node_modules\setimmediate\package.json
+77 error code EPERM
+78 error errno -4048
+79 error Error: EPERM, unlink 'C:\Users\marcel.durchholz\AppData\Roaming\npm\node_modules\generator-sublime\node_modules\yeoman-generator\node_modules\grouped-queue\node_modules\setimmediate\package.json'
+79 error     at Error (native)
+79 error  { [Error: EPERM, unlink 'C:\Users\marcel.durchholz\AppData\Roaming\npm\node_modules\generator-sublime\node_modules\yeoman-generator\node_modules\grouped-queue\node_modules\setimmediate\package.json']
+79 error   errno: -4048,
+79 error   code: 'EPERM',
+79 error   path: 'C:\\Users\\marcel.durchholz\\AppData\\Roaming\\npm\\node_modules\\generator-sublime\\node_modules\\yeoman-generator\\node_modules\\grouped-queue\\node_modules\\setimmediate\\package.json' }
+80 error Please try running this command again as root/Administrator.
+81 verbose exit [ -4048, true ]
+82 verbose unbuild node_modules\generator-sublime
+83 verbose gentlyRm vacuuming C:\Users\marcel.durchholz\AppData\Roaming\npm\node_modules\generator-sublime
+84 silly gentlyRm purging C:\Users\marcel.durchholz\AppData\Roaming\npm\node_modules\generator-sublime
+85 error error rolling back Error: EPERM, unlink 'C:\Users\marcel.durchholz\AppData\Roaming\npm\node_modules\generator-sublime\node_modules\yeoman-generator\node_modules\debug\node_modules\ms\package.json'
+85 error error rolling back     at Error (native)
+85 error error rolling back  { [Error: EPERM, unlink 'C:\Users\marcel.durchholz\AppData\Roaming\npm\node_modules\generator-sublime\node_modules\yeoman-generator\node_modules\debug\node_modules\ms\package.json']
+85 error error rolling back   errno: -4048,
+85 error error rolling back   code: 'EPERM',
+85 error error rolling back   path: 'C:\\Users\\marcel.durchholz\\AppData\\Roaming\\npm\\node_modules\\generator-sublime\\node_modules\\yeoman-generator\\node_modules\\debug\\node_modules\\ms\\package.json' }
