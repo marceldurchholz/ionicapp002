@@ -37,7 +37,7 @@
 
 	  <a ng-repeat="(key, item) in templateController.myPreferencesObjectSynced track by $index" class="item item-icon-left item-icon-right" ng-href="{{ templateController.preferencesObjectSynced[key].href }}">
 	    <i class="icon {{ templateController.preferencesObjectSynced[key].listicon }}"></i>
-	    {{ templateController.preferencesObjectSynced[key].name }} / {{ templateController.preferencesObjectSynced[key].tab }}
+	    {{ templateController.preferencesObjectSynced[key].name }}<!-- / {{ templateController.preferencesObjectSynced[key].tab }}-->
 	    <i class="icon ion-chevron-right"></i>
 	  </a>
 
