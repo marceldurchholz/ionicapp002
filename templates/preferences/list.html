@@ -6,7 +6,6 @@
 	bbb {{ templateController.preferencesObjectSynced }} bbb
 -->
 
-	<div class="list" ng-class="{'no-norder': templateBorder || templateBorder == true}">
 
 	  <!--
 	  <a class="item item-icon-left" href="#">
@@ -35,13 +34,34 @@
 	  </a>
 	  -->
 
-	  <a ng-repeat="(key, item) in templateController.myPreferencesObjectSynced track by $index" class="item item-icon-left item-icon-right" ng-href="{{ templateController.preferencesObjectSynced[key].href }}">
-	    <i class="icon {{ templateController.preferencesObjectSynced[key].listicon }}"></i>
-	    {{ templateController.preferencesObjectSynced[key].name }}<!-- / {{ templateController.preferencesObjectSynced[key].tab }}-->
-	    <i class="icon ion-chevron-right"></i>
-	  </a>
 
-	</div>
+
+
+		  
+		<div class="list" ng-class="{'no-norder': templateBorder || templateBorder == true}">
+		  <a ng-repeat="(key, item) in templateController.myPreferencesObjectSynced track by $index" class="item item-icon-left item-icon-right" ui-sref="preferences.layouts({user_id:'simplelogin:2'})">
+		    <i class="icon {{ templateController.preferencesObjectSynced[key].listicon }}"></i>
+		    {{ templateController.preferencesObjectSynced[key].name }} / {{ templateController.preferencesObjectSynced[key].tab }}
+		    <i class="icon ion-chevron-right"></i>
+		  </a>
+		</div>
+
+		  <!--
+		<div class="list" ng-class="{'no-norder': templateBorder || templateBorder == true}">
+			<div ng-repeat="(key, item) in templateController.myPreferencesObjectSynced track by $index" class="item item-complex item-avatar item-icon-right" can-swipe="false" can-reorder="false" can-delete="false">
+			    <a class="item item-avatar" ui-sref="preferences.layouts({user_id:'simplelogin:2'})">
+			      	<h2>{{ templateController.preferencesObjectSynced[key].name }}</h2>
+			      	<p>{{ templateController.preferencesObjectSynced[key].tab }}</p>
+					<i class="icon item-icon-right ion-chevron-right" style="padding-right:0;"></i>
+			    </a>
+		    </div>
+		</div>
+		  -->
+
+
+
+
+
 
 	<!--
 	<div class="list" ng-class="{'no-norder': templateBorder || templateBorder == true}">
