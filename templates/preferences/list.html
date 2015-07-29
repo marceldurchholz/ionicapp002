@@ -34,14 +34,26 @@
 	  </a>
 	  -->
 
-
-
-
-		  
+		  <!--
 		<div class="list" ng-class="{'no-norder': templateBorder || templateBorder == true}">
-		  <a ng-repeat="(key, item) in templateController.myPreferencesObjectSynced track by $index" class="item item-icon-left item-icon-right" ui-sref="preferences.layouts({user_id:'simplelogin:2'})">
+		  <a ng-repeat="(key, item) in templateController.myPreferencesObjectSynced track by $index" class="item item-icon-left item-icon-right" 
+		  ng-href="{{ templateController.preferencesObjectSynced[key].href }}" 
+		  xxx_ui-sref="preferences.layouts({user_id:'simplelogin:2'})">
 		    <i class="icon {{ templateController.preferencesObjectSynced[key].listicon }}"></i>
-		    {{ templateController.preferencesObjectSynced[key].name }} / {{ templateController.preferencesObjectSynced[key].tab }}
+		    {{ templateController.preferencesObjectSynced[key].name }} / {{ templateController.preferencesObjectSynced[key].href }} / {{ templateController.preferencesObjectSynced[key].tab }}
+		    <i class="icon ion-chevron-right"></i>
+		  </a>
+		</div>
+		-->
+
+		<div class="list" ng-class="{'no-norder': templateBorder || templateBorder == true}">
+		  <a ng-repeat="(key, item) in templateController.myPreferencesObjectSynced track by $index" class="item item-icon-left item-icon-right" 
+		  href="{{ templateController.preferencesObjectSynced[key].href }}" 
+		  xxx_ui-sref="preferences.layouts({user_id:'simplelogin:2'})"
+		  xxx_ui-sref="{{ templateController.preferencesObjectSynced[key].sref }}"
+		  >
+		    <i class="icon {{ templateController.preferencesObjectSynced[key].listicon }}"></i>
+		    {{ templateController.preferencesObjectSynced[key].name }} / {{ templateController.preferencesObjectSynced[key].sref }} / {{ templateController.preferencesObjectSynced[key].tab }}
 		    <i class="icon ion-chevron-right"></i>
 		  </a>
 		</div>
