@@ -1,12 +1,45 @@
 <div>
 
+
+	 *** {{ templateController.myProfilesObjectSynced }} ***
+
+	 <hr/>
+
+
+	 <ion-item xxx_ng-repeat="(key, item) in templateController.myProfilesObjectSynced track by $index">
+	    <div class="item-icon-left">
+	        <i class="icon ion-chevron-left"></i>
+	        <p>{{ templateController.myProfilesObjectSynced.firstname }} {{ templateController.myProfilesObjectSynced.lastname }}</p>
+	    </div>
+	    <!--
+	    <div class="item-icon-right">
+	        <i class="icon ion-ios-arrow-right"></i>
+	    </div>
+	    -->
+	</ion-item>
+
+
+	<!--
+	<div class="list" ng-class="{'no-norder': templateBorder || templateBorder == true}">
+		<div class="item item-complex item-avatar item-icon-right" can-swipe="false" can-reorder="false" can-delete="false">
+		    <a class="item item-avatar" ui-sref="users.details({user_id:templateController.myProfilesObjectSynced.user})">
+		      	<img src="pngs/app/corporate/avatar_m.png">
+		      	<h2>{{ templateController.myProfilesObjectSynced.firstname }} {{ templateController.myProfilesObjectSynced.lastname }}</h2>
+		      	<p>{{ templateController.myProfilesObjectSynced.style }}</p>
+				<i class="icon item-icon-right ion-chevron-right" style="padding-right:0;"></i>
+		    </a>
+	    </div>
+	</div>
+	-->
+
+
 	<div class="list" ng-class="{'no-norder': templateBorder || templateBorder == true}">
 		<div ng-repeat="(key, item) in templateController.myUsersObjectSynced track by $index" class="item item-complex item-avatar item-icon-right" can-swipe="false" can-reorder="false" can-delete="false">
 		    <a class="item item-avatar" ui-sref="users.details({user_id:key})">
 		      	<img src="pngs/app/corporate/avatar_m.png">
 		      	<h2>{{ templateController.usersObjectSynced[key].firstname }} {{ templateController.usersObjectSynced[key].lastname }}</h2>
 		      	<p>{{ templateController.usersObjectSynced[key].style }}</p>
-				<i class="icon item-icon-right ion-chevron-right" style="padding-right:0;f/ont-size:inherit;"></i>
+				<i class="icon item-icon-right ion-chevron-right" style="padding-right:0;"></i>
 		    </a>
 	    </div>
 	</div>

@@ -1,0 +1,14 @@
+<div>
+
+	<div class="list" ng-class="{'no-norder': templateBorder || templateBorder == true}">
+		<div ng-repeat="(key, item) in templateController.myPagesObjectSynced track by $index" class="item item-complex item-avatar item-icon-right" can-swipe="false" can-reorder="false" can-delete="false">
+		    <a class="item item-avatar" ui-sref="pagesdetails({page_id:key})">
+		      	<img src="pngs/app/corporate/picholder_msg.png">
+		      	<h2>{{ templateController.pagesObjectSynced[key].title }}</h2>
+		      	<p>{{ templateController.pagesObjectSynced[key].description }}</p>
+				<i class="icon item-icon-right ion-chevron-right" style="padding-right:0;"></i>
+		    </a>
+	    </div>
+	</div>
+
+</div>
