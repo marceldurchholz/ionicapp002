@@ -1,22 +1,9 @@
 <div>
 
 
-	 *** {{ templateController.myProfilesObjectSynced }} ***
+	*** {{ templateController.myProfilesObjectSynced }} ***
 
-	 <hr/>
-
-
-	 <ion-item xxx_ng-repeat="(key, item) in templateController.myProfilesObjectSynced track by $index">
-	    <div class="item-icon-left">
-	        <i class="icon ion-chevron-left"></i>
-	        <p>{{ templateController.myProfilesObjectSynced.firstname }} {{ templateController.myProfilesObjectSynced.lastname }}</p>
-	    </div>
-	    <!--
-	    <div class="item-icon-right">
-	        <i class="icon ion-ios-arrow-right"></i>
-	    </div>
-	    -->
-	</ion-item>
+	<hr/>
 
 
 	<!--
@@ -34,6 +21,16 @@
 
 
 	<div class="list" ng-class="{'no-norder': templateBorder || templateBorder == true}">
+
+		<div class="item item-complex item-avatar item-icon-right" can-swipe="false" can-reorder="false" can-delete="false">
+		    <a class="item item-avatar" ui-sref="users.details({user_id:templateController.mySponsorObjectSynced.user})">
+		      	<img src="pngs/app/corporate/avatar_m.png">
+		      	<h2>Hansi Sponsor {{ templateController.mySponsorObjectSynced.firstname }} {{ templateController.mySponsorObjectSynced.lastname }}</h2>
+		      	<p>This is his style text</p>
+				<i class="icon item-icon-right ion-chevron-right" style="padding-right:0;"></i>
+		    </a>
+	    </div>
+
 		<div ng-repeat="(key, item) in templateController.myUsersObjectSynced track by $index" class="item item-complex item-avatar item-icon-right" can-swipe="false" can-reorder="false" can-delete="false">
 		    <a class="item item-avatar" ui-sref="users.details({user_id:key})">
 		      	<img src="pngs/app/corporate/avatar_m.png">
