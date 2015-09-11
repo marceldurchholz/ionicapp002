@@ -25,8 +25,17 @@
 		<div class="item item-complex item-avatar item-icon-right" can-swipe="false" can-reorder="false" can-delete="false">
 		    <a class="item item-avatar" ui-sref="users.details({user_id:templateController.mySponsorObjectSynced.user})">
 		      	<img src="pngs/app/corporate/avatar_m.png">
-		      	<h2>Hansi Sponsor {{ templateController.mySponsorObjectSynced.firstname }} {{ templateController.mySponsorObjectSynced.lastname }}</h2>
+		      	<h2>*** {{ templateController.mySponsorObjectSynced.firstname }} {{ templateController.mySponsorObjectSynced.lastname }} ***</h2>
 		      	<p>This is his style text</p>
+				<i class="icon item-icon-right ion-chevron-right" style="padding-right:0;"></i>
+		    </a>
+	    </div>
+
+		<div class="item item-complex item-avatar item-icon-right" can-swipe="false" can-reorder="false" can-delete="false">
+		    <a class="item item-avatar" ui-sref="users.details({user_id:templateController.mySponsorObjectSynced.user})">
+		      	<img src="pngs/app/corporate/avatar_m.png">
+		      	<h2> - DIVIDER - </h2>
+		      	<p>*********************************************</p>
 				<i class="icon item-icon-right ion-chevron-right" style="padding-right:0;"></i>
 		    </a>
 	    </div>
